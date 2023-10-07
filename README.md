@@ -1,14 +1,19 @@
-# hahalanguage
+# Hahalanguage
+
 Hahalanguage is a Go programming language package that provides fun and "haha" related functionality. It includes functions to check for the presence of "5" or "ha" in various data types and a function to locate the positions of "h" and "a" in a given string.
+
 Let's have some fun!
 
-Installation
+## Installation
+
 To use this package, you can include it in your Go project using the following import statement:
 
-go
-Copy code
+```go
 import "github.com/Phadoo131/hahalanguage/model"
-Functions
+```
+
+Functions:
+
 FunOrFalse(T any) bool
 This function checks if the provided input contains the element "5" or "ha" and returns true if found, otherwise false. It supports various data types including integers, runes, bytes, strings, slices of strings, and slices of integers.
 
@@ -24,36 +29,36 @@ This function transforms the provided input into a string containing "5" or "ha"
 Usage
 Here's an example of how to use the Hahalanguage package:
 
-go
-Copy code
+```go
 package main
 
 import (
-	"fmt"
-	"github.com/Phadoo131/hahalanguage/model"
+    "fmt"
+    "github.com/Phadoo131/hahalanguage/model"
 )
 
 func main() {
-	haha := &model.Hahalanguage{}
+    haha := &model.Hahalanguage{}
 
-	// Check if "5" or "ha" is present in various data types
-	result := haha.FunOrFalse(12345)
-	fmt.Println(result) // true
+    // Check if "5" or "ha" is present in various data types
+    result := haha.FunOrFalse(12345)
+    fmt.Println(result) // true
 
-	// Find the positions of "h" and "a" in a string
-	text := "Have some fun!"
-	position := haha.WhereIsFun(text)
-	fmt.Println(position) // "The fun is at the index: 0, 3"
+    // Find the positions of "h" and "a" in a string
+    text := "Have some fun!"
+    position := haha.WhereIsFun(text)
+    fmt.Println(position) // "The fun is at the index: 0, 3"
 
-	// Have some fun with HahaThis
-	funString := haha.HahaThis("hello world")
-	fmt.Println(funString) // "hahaha lol lol lol lol lololololol"
+    // Have some fun with HahaThis
+    funString := haha.HahaThis("hello world")
+    fmt.Println(funString) // "hahaha lol lol lol lol lololololol"
 
-	// Get your daily dose of "5"
-	fiveString := haha.HahaThis([]int{1, 2, 3})
-	fmt.Println(fiveString) // "555"
+    // Get your daily dose of "5"
+    fiveString := haha.HahaThis([]int{1, 2, 3})
+    fmt.Println(fiveString) // "555"
 
-	// Enjoy endless "ha"s
-	haString := haha.HahaThis([]byte{1, 2, 3})
-	fmt.Println(haString) // "hahaha"
+    // Enjoy endless "ha"s
+    haString := haha.HahaThis([]byte{1, 2, 3})
+    fmt.Println(haString) // "hahaha"
 }
+```
