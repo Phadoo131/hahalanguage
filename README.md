@@ -47,7 +47,7 @@ func main() {
     // Find the positions of "h" and "a" in a string
     text := "Have some fun!"
     position := haha.WhereIsFun(text)
-    fmt.Println(position) // "The fun is at the index: 0, 3"
+    fmt.Println(position) // "The fun is at the index: 0, 1"
 
     // Have some fun with HahaThis
     funString := haha.HahaThis("hello world")
